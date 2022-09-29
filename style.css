@@ -161,7 +161,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 8px solid var(--card-accent-color);
+    border-left: 10px solid var(--card-accent-color);
     box-shadow: 0 10px 10px -10px #bdbdbd;
 }
 
