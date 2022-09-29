@@ -162,12 +162,46 @@ button {
     flex-direction: column;
     justify-content: space-between;
     border-left: 8px solid var(--card-accent-color);
+    box-shadow: 0 10px 10px -10px #bdbdbd;
 }
 
 .icons {
-    text-align: right;
+    justify-content: flex-end;
+    display: flex;
+    gap: 10px;
 }
 
 .main-content h3 {
     margin-bottom: 20px;
+}
+
+.side-card {
+    box-shadow: 0 10px 10px -10px #bdbdbd;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+hr {
+    opacity: 50%;
+}
+
+.profile {
+    display: flex;
+    gap: 12px;
+}
+
+#tegan {
+    background-color: paleturquoise;
+}
+
+#kendall {
+    background-color: gray;
+}
+
+#alex {
+    background-color: palevioletred;
 }
