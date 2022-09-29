@@ -23,6 +23,13 @@ body {
 header {
     box-shadow: 0 0 10px 2px #bdbdbd;
     z-index: 50;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    padding: 20px 40px;
+    padding-bottom: 8px;
+    align-items: center;
+    font-size: 1.3rem;
 }
 
 aside {
@@ -45,10 +52,10 @@ aside {
 a {
     text-decoration: none;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.3rem;
 }
 
-a i {
+a i, .search-bar i {
     margin-right: 20px;
 }
 
@@ -56,4 +63,73 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    flex-grow: 1;
+    background-color: var(--background-color);
+    border-style: none;
+    border-radius: 25px;
+    padding: 6px 20px;
+    font-size: 1.3rem;
+}
+
+.profile-section {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: bold;
+}
+
+.profile-picture {
+    background-color: #facc15;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.hello-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.hello-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.large {
+    width: 70px;
+    height: 70px;
+}
+
+.small-font {
+    font-size: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 20px;
+}
+
+button {
+    background-color: var(--light-blue-color);
+    border-style: none;
+    color: white;
+    font-size: 1.2rem;
+    width: 6.8rem;
+    height: 2.8rem;
+    border-radius: 25px;
 }
